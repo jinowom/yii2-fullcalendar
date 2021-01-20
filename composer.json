@@ -1,0 +1,46 @@
+{
+	"name": "jinowom/yii2-fullcalendar",
+	"description": "Yii2 fullcalendar Widgets",
+	"keywords": ["yii2", "fullcalendar","widget"],
+	"homepage": "https://www.jinostart.com/",
+	"type": "yii2-extension",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "charles lee",
+			"email": "chareler@163.com",
+			"homepage": "https://www.jinostart.com/",
+			"role": "Developer"
+		}
+	],
+	"support": {
+		"source": "https://github.com/jinowom/yii2-fullcalendar"
+	},
+	"minimum-stability": "dev",
+	"require": {
+		"yiisoft/yii2": "*",
+		"yiisoft/yii-jquery" : "*",
+		"bower-asset/fullcalendar": "4.0.2",
+		"bower-asset/fullcalendar-scheduler" : "4.0.1@stable"
+	},
+	"require-dev": {
+		"codeception/codeception": "*"
+	},
+	"config": {
+	    "process-timeout": 1800,
+	      "fxp-asset": {
+		"repositories": {
+		  "bower-asset/eve": {
+		  	"type": "bower-vcs",
+		  	"url": "https://github.com/adobe-webplatform/eve.git"
+		  }
+		}
+	    }
+	},
+	"conflict": {
+		"bower-asset/fullcalendar": "^4.3.0"
+	},
+	"autoload": {
+		"psr-4": { "jinowom\\yii2-fullcalendar\\": "src/" }
+	}
+}
