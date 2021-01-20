@@ -19,9 +19,8 @@
 	"minimum-stability": "dev",
 	"require": {
 		"yiisoft/yii2": "*",
-		"yiisoft/yii-jquery" : "*",
-		"bower-asset/fullcalendar": "4.0.2",
-		"bower-asset/fullcalendar-scheduler" : "4.0.1"
+		"fullcalendar/fullcalendar": "^3.10.2",
+		"fullcalendar/fullcalendar-scheduler": "^v1.10.1"
 	},
 	"require-dev": {
 		"codeception/codeception": "*"
@@ -38,7 +37,7 @@
 	    }
 	},
 	"conflict": {
-		"bower-asset/fullcalendar": "^4.3.0"
+		"fullcalendar/fullcalendar": "^3.10.2"
 	},
 	"autoload": {
 		"psr-4": { "jinowom\\yii2-fullcalendar\\": "src/" }
